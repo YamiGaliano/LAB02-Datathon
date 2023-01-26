@@ -9,8 +9,8 @@
 
 ### Objetivo
 A partir de datasets, generar un modelo de predicción de datos usando métricas para medir la performance de los mismos. 
-##
-[Consigna completa del LAB - Cohorte 6](https://github.com/YamiGaliano/LAB02-Datathon/blob/main/Consigna-Henry.md)
+
+[Consigna completa del LAB 02 - Cohorte 6](https://github.com/YamiGaliano/LAB02-Datathon/blob/main/Consigna-Henry.md)
 
 
 ### Contexto
@@ -32,10 +32,10 @@ Como parte del área de Machine Lerning de una empresa del rubro de la inmobilia
 
 <hr>
 <br/>
- <br>
 
 ## Archivos del repositorio
-- [**Datasets**:](./Datasets/) En esta carpeta se encuentran los archivos .csv utilizados para realizar el proyecto y también el archivo que se creó con los resultados de las predicciones.
+- [**Datasets**:](./datasets/) En esta carpeta se encuentran los archivos .csv utilizados para realizar el proyecto y también el archivo que se creó con los resultados de las predicciones.
+- [**Modelos**:](./modelos/) En esta carpeta se encuentran los archivos .csv resultado de cada modelo aplicado.
 - [**Archivos parquet**:](https://drive.google.com/drive/folders/1nJ9ZMj6E6zh6McC9NwCA6KopfUIOG_1O) Aquí se encuentran los archivos provistos para realizar los modelos.
 - [**EDA.ipynb**:](EDA.ipynb) Notebook con el desarrollo del EDA en los datasets.
 - [**modelo_ns.ipynb**:](modelo_ns.ipynb) Notebook con modelo no supervisado desarrollado.
@@ -65,7 +65,8 @@ Revisamos nuevamente nulos y separamos dataframes. Uno de ellos tiene los datos 
 - [Modelo_s2](modelo_s2.ipynb). En este archivo se genero un modelo supervisado con el archivo properties_train_rep.csv que tiene los datos nulos remplazados. 
     - Modelo 2. En este modelo se utilizo un árbol de desición donde solo se contemplaron las columnas cuantitativas. Obtuvimos un score de 0.64. 
 
-- [Modelo_nosupervisado](modelo_ns.ipynb). En este archivo se genero un modelo no supervisadocon el archivo properties_train_wn.csv que tiene los datos nulos eliminados. 
+### Modelos no supervisados
+- [Modelo_3](modelo_ns.ipynb). En este archivo se genero un modelo no supervisadocon el archivo properties_train_wn.csv que tiene los datos nulos eliminados. 
     - Modelo 3. En este modelo se utilizo Kmeans para realizar las predicciones con 3 clusters. Se generaron variables cuantitativas de 'laundry_options', 'parking_options' y 'state' a variables cuantitativas con el módulo map. Obtuvimos un score de 0.72. Al subirlo al Datathon obtuvimos un score de 0.015. 
 <hr>
 <br/>
